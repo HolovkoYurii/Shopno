@@ -9,4 +9,21 @@ body{
 .container{
     max-width: 1142px;
     margin: auto;
+    padding: 130px 0 122px 0;
+}
+h2{
+    @include montserrat-bold;
+    font-size:38px;
+    letter-spacing: 2px;
+}
+h4{
+    @include merriweather-regular;
+    font-size:18px;
+    opacity: 0.6;
+    letter-spacing: 1px;
+}
+.subtitle{
+    text-align:center;
+    margin-bottom:152px;
+    @include uppercase;
 }

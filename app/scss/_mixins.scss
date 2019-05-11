@@ -30,3 +30,6 @@
     font-weight: 500;
     color:$base-text-color;
 }
+@mixin uppercase {
+    text-transform: uppercase;
+}
