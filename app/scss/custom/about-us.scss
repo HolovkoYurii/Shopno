@@ -1,0 +1,59 @@
+@import "_variabels";
+@import "_mixins";
+#about-us{
+    background: #f8f9fa;
+     .text{
+        max-width: 428px;
+        padding-top:20px;
+        h3{
+            @include merriweather-bold;
+            font-size: 20px;
+             @include uppercase;
+             margin-bottom: 25px;
+        }  
+        p{
+            @include raleway-regular;
+            font-size: 16px;
+            opacity: 0.74;
+            line-height: 28px;
+            margin-bottom: 40px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .wrapp-content{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .carousel{
+        width:436px;
+        .slick-dots li.slick-active button:before{
+            background-color:#a4f6eb;
+        }
+        .slick-dots li button:before {
+            content:"";
+            height: 10px;
+            width: 10px;
+            border-radius:50%;
+            background-color:#cfcfcf;
+        }
+        .slick-dots li{
+            width: 5px;
+        }
+        .slick-dots li button:before{
+            opacity: 1;
+        }
+        
+
+        .slick-prev:before, .slick-next:before{
+        display: none;
+}
+      
+        
+        
+    }
+    
+   
+}

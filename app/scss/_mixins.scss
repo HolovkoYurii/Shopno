@@ -1,0 +1,35 @@
+@import "_variabels";
+
+@mixin montserrat-bold{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color:$base-text-color;
+}
+@mixin montserrat-regular{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color:$base-text-color;
+}
+@mixin merriweather-regular {
+    font-family: 'Merriweather', serif; 
+    font-weight: 400;
+    color:$base-text-color;
+}
+@mixin merriweather-bold {
+    font-family: 'Merriweather', serif; 
+    font-weight: 700;
+    color:$base-text-color;
+}
+@mixin raleway-regular {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color:$base-text-color;
+}
+@mixin raleway-medium {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color:$base-text-color;
+}
+@mixin uppercase {
+    text-transform: uppercase;
+}

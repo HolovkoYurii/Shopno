@@ -1,0 +1,13 @@
+@import "_variabels";
+@import "_mixins";
+#featured-works{
+    .gallery-works{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        img{
+            margin-bottom: 13px;
+         
+        }
+    }
+}

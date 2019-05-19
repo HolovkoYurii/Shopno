@@ -1,0 +1,59 @@
+@import "_variabels";
+@import "_mixins";
+#start-screen{
+    background: #eff0f1; 
+    padding: 62px 0 197px 0;
+    .header-menu{
+        margin-bottom: 202px;
+        .logo{
+            @include montserrat-bold;
+            font-size: 17px;
+            padding: 7px;
+            border:solid 6px #000;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            span{
+                font-size:21px;
+                color: #a4eee5;
+            }
+        }
+    }
+    h1{
+        @include montserrat-bold;
+        font-size: 45px;
+        margin:auto;
+        text-align: center;
+        margin-bottom: 147px;
+        color: #505050;
+        text-shadow: 3px 5px 6px #cacbcc;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        span{
+            background-color:#caf2ed;
+        }
+    }
+    .btn-contact{ 
+        @include montserrat-regular;  
+        font-size: 18px; 
+        border:solid 2px #777878;
+        height: 51px;
+        width: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        &:hover{
+            background:#caf2ed;
+            transition:all 0.4s ease;
+        }
+    }
+    .container{
+        position: relative;
+        padding:0;
+        .glass-foto{
+            position: absolute;
+            right: 127px;
+        }
+    }
+}      
