@@ -1,0 +1,65 @@
+@import "_variabels";
+@import "_mixins";
+ #our-services{
+    background: #f9fafb;
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        .card-services{
+            position: relative;
+            display: inline-block;
+            margin-bottom:12px;
+            .card-text{
+                position: absolute;
+                background:#000;
+                opacity: 0.6;
+                padding: 130px 0px 0px 65px;
+                height: 100%;
+                width: 100%;
+                color:$white-text-color;
+                &:hover{
+                    transition: all 0.7s ease;
+                    background:#a4f5eb ;
+                    h5,p,.fa,button{
+                         color:#000;
+                    }
+                    button{
+                    background:$white-text-color;
+                    }
+                }
+                button{
+                    @include uppercase;
+                    font-size:19px;
+                    @include raleway-medium ;
+                    color:$white-text-color;
+                    .fa::after{
+                        content:"\f178";
+                        font-family:"Fontawesome";
+                        font-weight: 100;
+                    }
+                }
+                p{
+                    @include raleway-regular;
+                    color:$white-text-color;
+                    font-size: 16px;
+                     max-width: 313px;
+                     margin-bottom:52px;
+                     line-height: 25px;
+                }
+            }  /* card-text */ 
+        }    /* card-services */     
+    }   /* services */ 
+}   
+
+
+ 
+
+
+
+
+
+
+
+
+

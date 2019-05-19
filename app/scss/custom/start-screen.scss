@@ -1,7 +1,7 @@
 @import "_variabels";
 @import "_mixins";
-.start-screen{
-    background: #eff0f1;
+#start-screen{
+    background: #eff0f1; 
     padding: 62px 0 197px 0;
     .header-menu{
         margin-bottom: 202px;
@@ -56,4 +56,4 @@
             right: 127px;
         }
     }
-}
+}      
