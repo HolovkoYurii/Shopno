@@ -22,6 +22,7 @@ gulp.task('clean', function () {
         .pipe(clean());
 });
 
+
 gulp.task('sass', function () {
     return gulp.src('./app/scss/main.scss')
       .pipe(sass().on('error', sass.logError))
@@ -41,7 +42,7 @@ gulp.task('minCss', gulp.series('clean', 'sass'))
 gulp.task('watch', function(){
      gulp.watch('./app/scss/custom/*.scss', gulp.series('minCss'));
      gulp.watch("app/*.html").on('change', browserSync.reload);
-     gulp.watch("app/css/*.css").on('change', browserSync.reload);
+     gulp.watch("app/css/allstyle.min.css").on('change', browserSync.reload);
 
 })
 

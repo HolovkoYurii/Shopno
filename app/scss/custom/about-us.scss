@@ -1,7 +1,8 @@
 @import "_variabels";
 @import "_mixins";
-.about-us{
+#about-us{
     background: #f8f9fa;
+    padding: 125px 0 107px 0;
      .text{
         max-width: 428px;
         padding-top:20px;
@@ -49,11 +50,6 @@
 
         .slick-prev:before, .slick-next:before{
         display: none;
-}
-      
-        
-        
+        }       
     }
-    
-   
 }
