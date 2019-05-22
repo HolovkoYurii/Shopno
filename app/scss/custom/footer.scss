@@ -1,0 +1,50 @@
+@import "../_variabels";
+@import "../_mixins";
+footer{
+    background:#2c2f32;
+    padding: 90px 0 90px 0;
+    .footer-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span{
+            @include raleway-regular;
+            font-size:16px;
+            color:$white-text-color;
+            opacity: 0.8;
+            @include uppercase;
+            margin-bottom: 19px;
+            display: block;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 206px;
+            margin-bottom: 43px;
+            li{
+                height: 40px;
+                width: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background:#898989;
+                opacity: 0.4;
+                font-size: 23px;
+                color:$white-text-color;
+                &:hover{
+                    background: #9feee4;
+                    opacity: 1;
+                    color:$base-text-color;
+                    transition: all .4s ease;
+                }
+            }
+          
+        }/* ul */
+        p{
+            @include raleway-medium;
+            color:$white-text-color;
+            opacity: 0.4;
+        }
+    }/* footer-info */
+   
+}/* footer */
