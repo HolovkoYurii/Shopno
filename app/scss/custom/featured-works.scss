@@ -1,6 +1,7 @@
 @import "_variabels";
 @import "_mixins";
 #featured-works{
+    padding:125px 0 105px 0;
     .gallery-works{
         display: flex;
         justify-content: space-between;

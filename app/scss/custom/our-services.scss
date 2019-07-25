@@ -2,6 +2,7 @@
 @import "_mixins";
  #our-services{
     background: #f9fafb;
+    padding: 120px 0 120px 0;
     .services{
         display: flex;
         flex-wrap: wrap;
@@ -50,7 +51,7 @@
             }  /* card-text */ 
         }    /* card-services */     
     }   /* services */ 
-}   
+}    
 
 
  
